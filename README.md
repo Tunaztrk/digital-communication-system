@@ -83,15 +83,15 @@ digital-communication-system/
 ├── docs/
 ├── report/
 ├── src/
-│   ├── transmitter/
-│   ├── receiver/
+│   ├── carrier/
 │   ├── channel/
-│   ├── coding/
-│   ├── modulation/
-│   ├── synchronization/
+│   ├── channel_coding/
+│   ├── demapping/
 │   ├── equalization/
-│   ├── utilities/
-│   └── main.m
+│   ├── matched_filter/
+│   ├── modulation/
+│   ├── pulse_shaping/
+│   └── source_coding/
 │
 └── README.md
 ```
