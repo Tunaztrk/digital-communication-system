@@ -64,21 +64,39 @@ Modern communication systems are typically built upon highly optimized software 
 
 ## Example Results
 
-### BER Performance
-
-![BER](docs/results/ber.png)
-
 ### Signal Constellation
 
-![Constellation](docs/results/constellation.png)
+16-PSK Constellation Diagram
+Gray-coded symbol mapping used by the implemented modulation and demapping modules.
+
+![Constellation](docs/results/16psk_constellation.png)
 
 ### Eye Diagram
 
-![Eye Diagram](docs/results/eye.png)
+Eye Diagram after Matched Filtering
+Real and imaginary components of the received signal after pulse shaping and matched filtering.
+
+![Eye Diagram](docs/results/eye_diag_16psk.png)
 
 ### Spectrum Analysis
 
-![Spectrum](docs/results/spectrum.png)
+Spectrum after Matched Filtering
+Frequency-domain representation of the received signal after pulse shaping and matched filtering.
+
+![Spectrum](docs/results/16psk_spectrum.png)
+
+### BER (Bit Error Rate) Analysis
+
+Bit and symbol error rates obtained for a 16-PSK transmission with matched transmitter and receiver carrier frequencies (5.5 Hz).
+
+![BER](docs/results/ber_demodulation_freq_shift.png)
+
+### BER Performance
+
+BER performance of the implemented uncoded 16-PSK communication system over an AWGN channel, evaluated for different \(E_b/N_0\) values.
+
+![BER](docs/results/ber_ebn0_16psk.png)
+
 
 Representative simulation results and figures are provided in the `docs/results/` directory.
 
