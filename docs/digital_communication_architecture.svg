@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="820" viewBox="0 0 1600 820">
+<defs>
+  <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+    <path d="M0,0 L10,5 L0,10 z" fill="#374151"/>
+  </marker>
+  <style>
+    text { font-family: Inter, Arial, Helvetica, sans-serif; fill:#1f2937; }
+    .title { font-size:34px; font-weight:700; }
+    .section { font-size:19px; font-weight:700; letter-spacing:1px; }
+    .box-title { font-size:17px; font-weight:700; }
+    .box-sub { font-size:15px; fill:#6b7280; }
+    .flow { fill:none; stroke:#374151; stroke-width:2.4; marker-end:url(#arrow); stroke-linejoin:miter; stroke-linecap:square; }
+  </style>
+</defs>
+<rect width="1600" height="820" fill="#ffffff"/>
+<text x="800" y="58" text-anchor="middle" class="title">Digital Communication System Architecture</text>
+
+<!-- TRANSMITTER -->
+<rect x="20" y="105" width="1560" height="180" rx="20"
+      fill="#eef5ff" stroke="#3b82f6" stroke-width="2"/>
+<rect x="675" y="90" width="250" height="32" fill="#ffffff"/>
+<text x="800" y="113" text-anchor="middle" class="section">TRANSMITTER</text>
+
+<g>
+  <rect x="60" y="160" width="235" height="88" rx="14" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="177.5" y="193" text-anchor="middle" class="box-title">Source Coding</text>
+  <text x="177.5" y="220" text-anchor="middle" class="box-sub">Huffman</text>
+</g>
+<g>
+  <rect x="355" y="160" width="235" height="88" rx="14" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="472.5" y="193" text-anchor="middle" class="box-title">Channel Coding</text>
+  <text x="472.5" y="220" text-anchor="middle" class="box-sub">Repetition</text>
+</g>
+<g>
+  <rect x="650" y="160" width="235" height="88" rx="14" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="767.5" y="193" text-anchor="middle" class="box-title">Modulation</text>
+  <text x="767.5" y="220" text-anchor="middle" class="box-sub">ASK / PSK / QAM</text>
+</g>
+<g>
+  <rect x="945" y="160" width="235" height="88" rx="14" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="1062.5" y="193" text-anchor="middle" class="box-title">Pulse Shaping</text>
+  <text x="1062.5" y="220" text-anchor="middle" class="box-sub">RRC</text>
+</g>
+<g>
+  <rect x="1240" y="160" width="235" height="88" rx="14" fill="#ffffff" stroke="#3b82f6" stroke-width="2"/>
+  <text x="1357.5" y="193" text-anchor="middle" class="box-title">Carrier Modulation</text>
+  <text x="1357.5" y="220" text-anchor="middle" class="box-sub">Upconversion</text>
+</g><path d="M295,204.0 H353" class="flow"/><path d="M590,204.0 H648" class="flow"/><path d="M885,204.0 H943" class="flow"/><path d="M1180,204.0 H1238" class="flow"/>
+<!-- CHANNEL -->
+<text x="800.0" y="323" text-anchor="middle" class="section">CHANNEL</text>
+<rect x="570" y="350" width="460" height="90" rx="18"
+      fill="#effcf1" stroke="#34a853" stroke-width="2"/>
+<text x="800.0" y="387" text-anchor="middle" class="box-title">AWGN / Band-Limited Channel</text>
+<text x="800.0" y="415" text-anchor="middle" class="box-sub">Noise and channel distortion</text>
+<path d="M1357.5,248 V305 H901.2 V348" class="flow"/>
+<!-- RECEIVER -->
+<rect x="20" y="505" width="1560" height="170" rx="20"
+      fill="#f6f0ff" stroke="#8b5cf6" stroke-width="2"/>
+<rect x="675" y="490" width="250" height="32" fill="#ffffff"/>
+<text x="800" y="513" text-anchor="middle" class="section">RECEIVER</text>
+
+<g>
+  <rect x="35" y="550" width="215" height="88" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="142.5" y="583" text-anchor="middle" class="box-title">Carrier Demodulation</text>
+  <text x="142.5" y="610" text-anchor="middle" class="box-sub">Downconversion</text>
+</g>
+<g>
+  <rect x="290" y="550" width="215" height="88" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="397.5" y="583" text-anchor="middle" class="box-title">Matched Filter &amp; Sampling</text>
+  <text x="397.5" y="610" text-anchor="middle" class="box-sub">RRC matched filter</text>
+</g>
+<g>
+  <rect x="545" y="550" width="215" height="88" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="652.5" y="583" text-anchor="middle" class="box-title">Equalization</text>
+  <text x="652.5" y="610" text-anchor="middle" class="box-sub">LMMSE / ZF</text>
+</g>
+<g>
+  <rect x="800" y="550" width="215" height="88" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="907.5" y="583" text-anchor="middle" class="box-title">Demapping</text>
+  <text x="907.5" y="610" text-anchor="middle" class="box-sub">Hard / Soft</text>
+</g>
+<g>
+  <rect x="1055" y="550" width="215" height="88" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1162.5" y="583" text-anchor="middle" class="box-title">Channel Decoding</text>
+  <text x="1162.5" y="610" text-anchor="middle" class="box-sub">Repetition</text>
+</g>
+<g>
+  <rect x="1310" y="550" width="215" height="88" rx="14" fill="#ffffff" stroke="#8b5cf6" stroke-width="2"/>
+  <text x="1417.5" y="583" text-anchor="middle" class="box-title">Source Decoding</text>
+  <text x="1417.5" y="610" text-anchor="middle" class="box-sub">Huffman</text>
+</g><path d="M250,594.0 H288" class="flow"/><path d="M505,594.0 H543" class="flow"/><path d="M760,594.0 H798" class="flow"/><path d="M1015,594.0 H1053" class="flow"/><path d="M1270,594.0 H1308" class="flow"/><path d="M690,440 V475 H142.5 V548" class="flow"/>
+<!-- PERFORMANCE EVALUATION -->
+<rect x="560" y="735" width="480" height="56" rx="16"
+      fill="#fff8e7" stroke="#d99a00" stroke-width="2"/>
+<text x="800.0" y="758" text-anchor="middle" class="box-title">Performance Evaluation</text>
+<text x="800.0" y="779" text-anchor="middle" class="box-sub">BER • Constellation • Eye Diagram • Spectrum</text>
+<path d="M1417.5,638 V703 H800.0 V733" class="flow"/></svg>

@@ -1,0 +1,68 @@
+<mxfile host="app.diagrams.net" modified="2026-08-08T00:30:00.000Z" agent="OpenAI" version="24.7.17">
+<diagram id="digital-comm-architecture-v3" name="Page-1">
+<mxGraphModel dx="1422" dy="794" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1"
+ fold="1" page="1" pageScale="1" pageWidth="1600" pageHeight="820" math="0" shadow="0">
+<root>
+<mxCell id="0"/><mxCell id="1" parent="0"/><mxCell id="title" value="<b>Digital Communication System Architecture</b>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ffffff;fontColor=#1f2937;fontSize=24;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="430" y="20" width="740" height="45" as="geometry"/>
+</mxCell><mxCell id="txbg" value="<b>TRANSMITTER</b>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#eef5ff;strokeColor=#3b82f6;fontColor=#1f2937;fontSize=17;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="20" y="105" width="1560" height="180" as="geometry"/>
+</mxCell><mxCell id="chlabel" value="<b>CHANNEL</b>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#ffffff;fontColor=#1f2937;fontSize=17;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="690" y="300" width="220" height="30" as="geometry"/>
+</mxCell><mxCell id="channel" value="<b>AWGN / Band-Limited Channel</b><br><font color='#6b7280'>Noise and channel distortion</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#effcf1;strokeColor=#34a853;fontColor=#1f2937;fontSize=15;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="570" y="350" width="460" height="90" as="geometry"/>
+</mxCell><mxCell id="rxbg" value="<b>RECEIVER</b>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f6f0ff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=17;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="20" y="505" width="1560" height="170" as="geometry"/>
+</mxCell><mxCell id="eval" value="<b>Performance Evaluation</b><br><font color='#6b7280'>BER • Constellation • Eye Diagram • Spectrum</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#fff8e7;strokeColor=#d99a00;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="560" y="735" width="480" height="56" as="geometry"/>
+</mxCell><mxCell id="tx1" value="<b>Source Coding</b><br><font color='#6b7280'>Huffman</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3b82f6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="60" y="160" width="235" height="88" as="geometry"/>
+</mxCell><mxCell id="tx2" value="<b>Channel Coding</b><br><font color='#6b7280'>Repetition</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3b82f6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="355" y="160" width="235" height="88" as="geometry"/>
+</mxCell><mxCell id="tx3" value="<b>Modulation</b><br><font color='#6b7280'>ASK / PSK / QAM</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3b82f6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="650" y="160" width="235" height="88" as="geometry"/>
+</mxCell><mxCell id="tx4" value="<b>Pulse Shaping</b><br><font color='#6b7280'>RRC</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3b82f6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="945" y="160" width="235" height="88" as="geometry"/>
+</mxCell><mxCell id="tx5" value="<b>Carrier Modulation</b><br><font color='#6b7280'>Upconversion</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#3b82f6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="1240" y="160" width="235" height="88" as="geometry"/>
+</mxCell><mxCell id="etx0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tx1" target="tx2">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="etx1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tx2" target="tx3">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="etx2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tx3" target="tx4">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="etx3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="tx4" target="tx5">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="rx1" value="<b>Carrier Demodulation</b><br><font color='#6b7280'>Downconversion</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="35" y="550" width="215" height="88" as="geometry"/>
+</mxCell><mxCell id="rx2" value="<b>Matched Filter &amp; Sampling</b><br><font color='#6b7280'>RRC matched filter</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="290" y="550" width="215" height="88" as="geometry"/>
+</mxCell><mxCell id="rx3" value="<b>Equalization</b><br><font color='#6b7280'>LMMSE / ZF</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="545" y="550" width="215" height="88" as="geometry"/>
+</mxCell><mxCell id="rx4" value="<b>Demapping</b><br><font color='#6b7280'>Hard / Soft</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="800" y="550" width="215" height="88" as="geometry"/>
+</mxCell><mxCell id="rx5" value="<b>Channel Decoding</b><br><font color='#6b7280'>Repetition</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="1055" y="550" width="215" height="88" as="geometry"/>
+</mxCell><mxCell id="rx6" value="<b>Source Decoding</b><br><font color='#6b7280'>Huffman</font>" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffffff;strokeColor=#8b5cf6;fontColor=#1f2937;fontSize=14;align=center;verticalAlign=middle;fontStyle=1;" vertex="1" parent="1">
+<mxGeometry x="1310" y="550" width="215" height="88" as="geometry"/>
+</mxCell><mxCell id="erx0" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rx1" target="rx2">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="erx1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rx2" target="rx3">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="erx2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rx3" target="rx4">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="erx3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rx4" target="rx5">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="erx4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rx5" target="rx6">
+<mxGeometry relative="1" as="geometry"></mxGeometry>
+</mxCell><mxCell id="e_tx_ch" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.72;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="tx5" target="channel">
+<mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1357.5" y="305"/><mxPoint x="901.2" y="305"/></Array></mxGeometry>
+</mxCell><mxCell id="e_ch_rx" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=0.2608695652173913;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="channel" target="rx1">
+<mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="690" y="475"/><mxPoint x="142.5" y="475"/></Array></mxGeometry>
+</mxCell><mxCell id="e_rx_eval" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=block;endFill=1;strokeColor=#374151;strokeWidth=2;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="rx6" target="eval">
+<mxGeometry relative="1" as="geometry"><Array as="points"><mxPoint x="1417.5" y="703"/><mxPoint x="800.0" y="703"/></Array></mxGeometry>
+</mxCell>
+</root>
+</mxGraphModel>
+</diagram>
+</mxfile>

@@ -28,7 +28,7 @@ Modern communication systems are typically built upon highly optimized software 
 
 ## System Architecture
 
-*Architecture diagram will be placed here.*
+![Digital Communication System Architecture](docs/digital_communication_architecture.png)
 
 ---
 
@@ -62,14 +62,23 @@ Modern communication systems are typically built upon highly optimized software 
 
 ---
 
-## Results
+## Example Results
 
-Example simulations include:
+### BER Performance
 
-- Bit Error Rate (BER) evaluation
-- Signal constellation analysis
-- Eye diagram visualization
-- Spectrum analysis
+![BER](docs/results/ber.png)
+
+### Signal Constellation
+
+![Constellation](docs/results/constellation.png)
+
+### Eye Diagram
+
+![Eye Diagram](docs/results/eye.png)
+
+### Spectrum Analysis
+
+![Spectrum](docs/results/spectrum.png)
 
 Representative simulation results and figures are provided in the `docs/results/` directory.
 
